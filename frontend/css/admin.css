@@ -1,0 +1,75 @@
+.admin-body { background: #f4f7fb; }
+
+.admin-header {
+    background: #142033;
+    color: white;
+    padding: 18px 0;
+}
+
+.admin-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-header .button {
+    color: white;
+    border-color: rgba(255,255,255,.3);
+    background: transparent;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.table-wrap {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+th { background: #f7f9fc; }
+
+.status-select { min-width: 140px; }
+
+.small-button {
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+}
